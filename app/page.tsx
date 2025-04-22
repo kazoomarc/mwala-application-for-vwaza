@@ -1,10 +1,13 @@
 import Image from "next/image";
-const images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+const images = Array.from({ length: 31 }, (_, i) => {
+  const num = String(i + 1).padStart(3, "0"); // pads numbers like 001, 002...
+  return `vwaza-${num}.jpg`;
+});
 
 export default function Home() {
   return (
     <div className="bg-[rgb(8,8,8)] min-h-screen font-sans font-[family-name:var(--font-geist-sans)">
-      <div className="mx-3.5 border-1 _border-x-blue-200 border-dashed">
+      <div className="mx-3.5 lg:mx-[60px]">
         <div className="max-w-2xl flex flex-col gap-6">
           <h1 className="text-white text-3xl font-bold mt-12 ">
             Hi, I'm Joel Mwala{" "}
@@ -31,24 +34,26 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <h2 className="text-white font-bold text-3xl mt-[18px] border-1 border-[transparent] border-t-[#ffffff14] pt-2">
+          <h2 className="text-white font-bold text-3xl mt-[18px] border-1 border-dashed border-[transparent] border-t-[#ffffff14] pt-2 ">
             Explorations
           </h2>
-          <div mt-6>
-            {images.map((img, index) => (
-              <div key={index} style={{ marginBottom: "1rem" }}>
+          <div className="mt-6 flex flex-col items-center">
+            {images.map((img, idx) => (
+              <div className="relative w-full aspect-[5/4] mb-3 border border-dashed border-[#ffffff14]">
                 <Image
                   src={`/images/${img}`}
-                  alt={`Image ${index + 1}`}
-                  width={400}
-                  height={300}
+                  alt={`Gallery image ${idx + 1}`}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  quality={100}
+                  loading="lazy"
                 />
               </div>
             ))}
           </div>
         </div>
         <div>
-          <h2 className="text-white font-bold text-3xl mt-[18px] border-1 border-[transparent] border-t-[#ffffff14] pt-2">
+          <h2 className="text-white font-bold text-3xl mt-[18px] border-1 border-[transparent] border-dashed border-t-[#ffffff14] pt-2">
             Closing Remarks(Extras about the works)
           </h2>
           <div className=" max-w-2xl flex flex-col gap-6">
