@@ -87,7 +87,7 @@ export default function Home() {
               . I'm excited about the possibility of contributing to your team
               while developing my social and management skills.
             </p>
-            <p className="text-[#d5d5d5] text-[15px] mb-14">
+            <p className="text-[#d5d5d5] text-[15px] mb-">
               For additional examples of my work demonstrating my understanding
               of form, typography, and color principles, please visit my Twitter
               profile{" "}
@@ -100,6 +100,18 @@ export default function Home() {
               , where you'll find web design projects that showcase these
               fundamental design capabilities.
             </p>
+
+            <div className="flex flex-col gap-4 mb-[112px]">
+              <p className="text-[#b9b9b9] text-[18px] font-semibold ">
+                Yours Trurly,
+              </p>
+              <a
+                href="https://x.com/mwala_joel"
+                className="font-semibold underline text-[#25b1db]"
+              >
+                @mwala_joel
+              </a>
+            </div>
           </div>
         </div>
       </div>
