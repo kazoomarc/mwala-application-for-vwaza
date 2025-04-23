@@ -15,6 +15,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mwala for vwaza",
   description: "Mwala application for vwaza.com",
+  openGraph: {
+    title: "Joel Mwala – Vwaza Application",
+    description: "Custom-designed visuals tailored for Vwaza Multimedia.",
+    url: "https://mwala-application-for-vwaza.vercel.app/",
+    images: [
+      {
+        url: "/og.jpg", // since it's in /public
+        width: 1200,
+        height: 630,
+        alt: "Vwaza Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Joel Mwala – Vwaza Application",
+    description: "Check out my visuals for Vwaza.",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function RootLayout({
