@@ -1,5 +1,5 @@
 import Image from "next/image";
-const images = Array.from({ length: 31 }, (_, i) => {
+const images = Array.from({ length: 32 }, (_, i) => {
   const num = String(i + 1).padStart(3, "0"); // pads numbers like 001, 002...
   return `vwaza-${num}.jpg`;
 });
