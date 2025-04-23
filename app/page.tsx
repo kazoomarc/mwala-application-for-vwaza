@@ -58,9 +58,7 @@ export default function Home() {
           </h2>
           <div className=" max-w-2xl flex flex-col gap-6">
             <p className="text-[#d5d5d5] text-[15px] mt-6">
-              All explorations were created in Figma with animations developed
-              in <span className="font-medium text-[#254fdb]">Jitter</span>. I
-              primarily used the{" "}
+              All explorations were created in Figma. I primarily used the{" "}
               <span className="font-medium text-[#254fdb]">'Sora'</span>{" "}
               typeface for its bold presence that commands attention and
               readability from a distance. For the mock Vwaza Events website UI
