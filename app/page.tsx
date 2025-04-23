@@ -67,9 +67,9 @@ export default function Home() {
                 Instrument Serif
               </span>
               , while{" "}
-              <span className="font-medium text-[#254fdb]">Albert Sans</span>
+              <span className="font-medium text-[#254fdb]">Albert Sans </span>
               was selected for UI playlist cards (I noticed you're using{" "}
-              <span className="font-medium text-[#254fdb]">Proxima Nova</span>
+              <span className="font-medium text-[#254fdb]">Proxima Nova </span>
               on your website, but chose freely available alternatives for this
               showcase).
             </p>
